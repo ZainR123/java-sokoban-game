@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/15" alignment="CENTER"
+          prefHeight="650"
+          prefWidth="500" styleClass="background" stylesheets="@style.css"
+          fx:controller="com.controller.MenuController">
+
+    <VBox spacing="20.0" alignment="CENTER">
+        <Label text="Sokoban" styleClass="title"/>
+        <Label styleClass="box"/>
+        <Button text="Play" onAction="#newGame" styleClass="playButton"/>
+        <Button text="Load Game" onAction="#loadGame" styleClass="loadButton"/>
+        <Button text="Settings" onAction="#settings"
+                styleClass="settingsButton"/>
+        <Button text="Exit" onAction="#closeMenu" styleClass="exitButton"/>
+    </VBox>
+
+</GridPane>

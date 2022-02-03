@@ -1,0 +1,134 @@
+.title {
+    -fx-font-size: 50;
+    -fx-font-weight: bold;
+}
+
+.box {
+    -fx-graphic: url('box.png');
+}
+
+.button:hover {
+    -fx-background-color: Wheat;
+}
+
+.button:pressed {
+    -fx-background-color: AntiqueWhite;
+}
+
+.images {
+    -fx-padding: 7;
+    -fx-background-color: transparent;
+}
+
+.colorPicker {
+    -fx-padding: 5;
+    -fx-background-color: transparent;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-border-color: Wheat;
+}
+
+.subTitle {
+    -fx-padding: 5;
+    -fx-font-size: 25;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+.dialogMessage {
+    -fx-padding: 10;
+    -fx-font-size: 16;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+#moveCounter {
+    -fx-graphic: url('move.png');
+    -fx-padding: 15;
+    -fx-font-size: 25;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+#timer {
+    -fx-graphic: url('timer.png');
+    -fx-padding: 15;
+    -fx-font-size: 25;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+#level {
+    -fx-graphic: url('level.png');
+    -fx-padding: 15;
+    -fx-font-size: 25;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+.playButton {
+    -fx-graphic: url('play.png');
+    -fx-padding: 15;
+    -fx-font-size: 25;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+.loadButton {
+    -fx-graphic: url('loading.png');
+    -fx-padding: 15;
+    -fx-font-size: 25;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+.leaderboardButton {
+    -fx-graphic: url('leaderboard.png');
+    -fx-padding: 15;
+    -fx-font-size: 25;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+.coloursButton {
+    -fx-graphic: url('colour.png');
+    -fx-padding: 15;
+    -fx-font-size: 25;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+.helpButton {
+    -fx-graphic: url('about.png');
+    -fx-padding: 15;
+    -fx-font-size: 25;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+.exitButton {
+    -fx-graphic: url('exit.png');
+    -fx-padding: 15;
+    -fx-font-size: 25;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+.toggleButton {
+    -fx-graphic: url('music.png');
+    -fx-padding: 15;
+    -fx-font-size: 25;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+.settingsButton {
+    -fx-graphic: url('settings.png');
+    -fx-padding: 15;
+    -fx-font-size: 25;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+.background {
+    -fx-background-color: tan;
+}

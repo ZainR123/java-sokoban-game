@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" GridPane.rowIndex="0"
+          xmlns="http://javafx.com/javafx/15"
+          stylesheets="@style.css" styleClass="background"
+          fx:controller="com.model.engine.GameModel">
+
+    <MenuBar>
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem accelerator="Shortcut+S" mnemonicParsing="false"
+                      onAction="#callSaveGame" text="Save Game"/>
+            <SeparatorMenuItem/>
+            <MenuItem accelerator="Shortcut+M" mnemonicParsing="false"
+                      onAction="#callStart" text="Main Menu"/>
+            <MenuItem accelerator="Shortcut+Q" mnemonicParsing="false"
+                      onAction="#closeGame" text="Exit"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Level">
+            <MenuItem accelerator="Shortcut+Z"
+                      mnemonicParsing="false" onAction="#undo" text="Undo"/>
+            <RadioMenuItem accelerator="Shortcut+T" mnemonicParsing="false"
+                           onAction="#callToggleMusic"
+                           text="Toggle Music"/>
+            <RadioMenuItem accelerator="Shortcut+Y" mnemonicParsing="false"
+                           onAction="#toggleDebug"
+                           text="Toggle Debug"/>
+            <SeparatorMenuItem/>
+            <MenuItem accelerator="Shortcut+R" mnemonicParsing="false"
+                      onAction="#resetLevel" text="Reset Level"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="About">
+            <MenuItem accelerator="Shortcut+H" mnemonicParsing="false"
+                      onAction="#callShowHelpGame" text="Game Help"/>
+        </Menu>
+    </MenuBar>
+
+    <HBox GridPane.rowIndex="1">
+        <Label fx:id="moveCounter"/>
+        <Label fx:id="level"/>
+        <Label fx:id="timer"/>
+    </HBox>
+
+    <GridPane fx:id="gameGrid" alignment="BOTTOM_CENTER" GridPane.rowIndex="2"/>
+</GridPane>

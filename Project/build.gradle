@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+javafx {
+    version = "15.0.1"
+    modules = ['javafx.controls','javafx.graphics','javafx.fxml','javafx.media']
+}
+
+mainClassName = 'com.controller.Main'
+
+group 'com.psyzr2'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs = ["src/main/resources",
+                       "src/main/resources/leaderboard",
+                       "src/main/resources/music",
+                       "src/main/resources/maps",
+                       "src/main/resources/maps/mapSaves",
+                       "src/main/resources/fxml",
+                       "src/main/resources/fxml/images",
+                       "src/main/resources/sprites",
+                       "src/main/resources/sprites/crates",
+                       "src/main/resources/sprites/keepers",
+                       "src/main/resources/sprites/floors",
+                       "src/main/resources/sprites/diamonds",
+                       "src/main/resources/sprites/crateDiamond",
+                       "src/main/resources/sprites/keepers",
+                       "src/main/resources/sprites/diamonds",
+                       "src/main/resources/sprites/walls"]
+        }
+    }
+}
+
+dependencies {
+    implementation 'junit:junit:4.12'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}

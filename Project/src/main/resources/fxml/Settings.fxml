@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/15" alignment="CENTER"
+          prefHeight="650"
+          prefWidth="500" fx:controller="com.controller.SettingsController"
+          styleClass="background" stylesheets="@style.css">
+
+    <VBox spacing="20.0" alignment="CENTER">
+        <Label text="Sokoban" styleClass="title"/>
+        <Label styleClass="box"/>
+        <Button text="Game Grid Colours" onAction="#callColourPicker"
+                styleClass="coloursButton"/>
+        <Button text="Game Grid Textures" onAction="#callImagePicker"
+                styleClass="coloursButton"/>
+        <Button text="Game Help" onAction="#callShowHelp"
+                styleClass="helpButton"/>
+        <Button text="Toggle Music" onAction="#callToggleMusic"
+                styleClass="toggleButton"/>
+        <Button text="Go Back" onAction="#callStart" styleClass="exitButton"/>
+    </VBox>
+
+</GridPane>
